@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="progresscontrolRE" constructor="Progresscontrol" version="0.0.1" display-name-key="Progresscontrol" description-key="Progresscontrol description" control-type="standard">
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="progressMeasure" display-name-key="Progress Measure" of-type="Whole.None" usage="bound" required="true" />
+    <property name="maxValue" display-name-key="Maximum Value" of-type="Whole.None" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="style.css" order="1"/>
+    </resources>
+
+  </control>
+</manifest>
