@@ -1,7 +1,4 @@
 
----
-
-````markdown
 # Progresscontrol PCF Component
 
 A customizable progress bar control for Power Apps Component Framework (PCF) that visually displays progress with options for animated fill, color customization, and adjustable font size.
@@ -22,7 +19,7 @@ A customizable progress bar control for Power Apps Component Framework (PCF) tha
    ```bash
    npm install
    npm run build
-````
+
 
 3. Import the generated `.zip` solution into your Power Apps environment.
 
@@ -80,15 +77,7 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Contact
 
-Created by \[Rhys Evans] - \[[rhys.evans@empower365.co.uk](mailto:rhys.evans@empwer365.co.uk)]
+Created by Rhys Evans - \[[rhys.evans@empower365.co.uk](mailto:rhys.evans@empwer365.co.uk)]
 
 ---
 
-*Feel free to customize this README with screenshots, links, or additional documentation.*
-
-```
-
----
-
-Would you like me to tailor this more specifically with your exact property names or add usage examples with code snippets?
-```
