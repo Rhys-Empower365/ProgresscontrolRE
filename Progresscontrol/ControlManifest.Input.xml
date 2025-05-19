@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="progresscontrolRE" constructor="Progresscontrol" version="0.0.1" display-name-key="Progresscontrol" description-key="Progresscontrol description" control-type="standard">
-    <external-service-usage enabled="false">
-    </external-service-usage>
-    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="progressMeasure" display-name-key="Progress Measure" of-type="Whole.None" usage="bound" required="true" />
-    <property name="maxValue" display-name-key="Maximum Value" of-type="Whole.None" usage="input" required="true" />
+  <control namespace="progresscontrolRE" constructor="Progresscontrol" version="0.0.2" display-name-key="Progresscontrol" description-key="Progresscontrol description" control-type="standard">
+    <external-service-usage enabled="false" />
+
+    <property name="progressMeasure" display-name-key="ProgressMeasure_DisplayName" description-key="ProgressMeasure_Description" of-type="Whole.None" usage="bound" required="true" />
+    <property name="maxValue" display-name-key="MaxValue_DisplayName" description-key="MaxValue_Description" of-type="Whole.None" usage="input" required="true" />
+    <property name="barColour" display-name-key="BarColour" description-key="BarColour_Description" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="animateFill" display-name-key="AnimateFill" description-key="AnimateFill_Description" of-type="TwoOptions" usage="input" required="false" />
+    <property name="fontSize" display-name-key="FontSize" description-key="FontSize_Desc" of-type="Whole.None" usage="input" required="false" />
+
     <resources>
       <code path="index.ts" order="1" />
-      <css path="style.css" order="1"/>
+      <css path="style.css" order="1" />
+      <resx path="strings/Progresscontrol.1033.resx" version="1.0.0" />
     </resources>
 
   </control>
 </manifest>
+

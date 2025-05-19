@@ -7,10 +7,9 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-
 .progress-title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 12px;
     color: #333;
     text-align: center;
@@ -29,13 +28,16 @@
 
 .progress-bar-fill {
     height: 100%;
-    width: 0%;
+    border-radius: 30px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Applied only when animateFill = true */
+.progress-bar-fill.gradient {
     background: linear-gradient(90deg, #00dbde, #fc00ff);
     background-size: 200% 200%;
     animation: moveGradient 3s ease infinite;
-    border-radius: 30px;
     box-shadow: 0 0 20px rgba(252, 0, 255, 0.6);
-    transition: width 0.5s ease-in-out;
 }
 
 @keyframes moveGradient {
@@ -43,4 +45,3 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
